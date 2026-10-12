@@ -160,7 +160,7 @@ No projeto, `normalizeText` também remove diferenças de acentuação e caixa: 
 
 ### Posicionamento de imagem de fundo no hero
 
-O banner original tinha frases e rótulos incorporados à imagem, que se misturavam ao título do site. `public/assets/hero-veiculos.jpg` é um recorte vertical da faixa dos veículos; o recorte remove essas frases sem redesenhar os automóveis. No desktop, o CSS posiciona essa faixa à direita com `object-fit: contain`, preservando a imagem inteira. Em telas menores, `object-fit: cover` usa um recorte mais fechado, enquanto a imagem fica abaixo do texto principal. `object-fit: contain` mostra a imagem inteira dentro da área; `cover` preenche a área e corta o excesso.
+O banner original tinha frases e rótulos incorporados à imagem, que se misturavam ao título do site. `public/assets/hero-veiculos.jpg` é um recorte da faixa dos veículos; o recorte remove essas frases sem redesenhar os automóveis. O componente `Image` usa `fill` para ocupar a área do hero, e o CSS usa `object-fit: cover` para preencher essa área sem distorcer a foto. Como a faixa é bem larga, parte das laterais fica de fora. `object-position` escolhe qual parte fica visível: o hero prioriza a direita no computador e ajusta o foco em telas menores. `cover` preenche a área e corta o excesso; `contain` mostraria a imagem inteira, mas poderia deixar espaços vazios.
 
 ## Git e preparação para o GitHub
 

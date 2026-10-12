@@ -1,5 +1,16 @@
 # Changelog
 
+## Versão 1.0.1 — Ajuste do banner ao hero
+
+### Imagem preenchendo a área do hero
+
+- **O que mudou:** a imagem dos veículos agora preenche toda a área do hero em computadores e celulares, com enquadramento responsivo.
+- **Motivo:** o enquadramento anterior deixava uma faixa pequena à direita e muito espaço vazio.
+- **Arquivos afetados:** `app/page.js`, `app/globals.css`, `AULA.md`, `CHANGELOG.md`.
+- **Decisões:** `next/image` usa `fill` e o CSS usa `object-fit: cover`, preservando a proporção da imagem e cortando o excesso. `object-position` mantém o foco nos veículos em telas de larguras diferentes.
+- **Verificações:** `npm.cmd run build` concluiu com sucesso; `git diff --check` não apontou problemas de whitespace.
+- **Pendências:** conferir visualmente o enquadramento final em computador e celular no navegador.
+
 ## Versão 1.0.0 — Recorte dos veículos no hero
 
 ### Banner sem frases incorporadas

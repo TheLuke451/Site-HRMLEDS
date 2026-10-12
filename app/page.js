@@ -11,10 +11,9 @@ export default function HomePage() {
           className="hero-image"
           src="/assets/hero-veiculos.jpg"
           alt="Recorte com uma ambulância, um ônibus e uma van, representando aplicações de iluminação automotiva"
-          width={1400}
-          height={211}
+          fill
           preload
-          sizes="(max-width: 760px) 100vw, 68vw"
+          sizes="100vw"
         />
         <div className="hero-shade" aria-hidden="true" />
         <div className="hero-content">
