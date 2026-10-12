@@ -1,5 +1,16 @@
 # Changelog
 
+## Versão 0.8.0 — Primeiro envio ao GitHub
+
+### Repositório remoto inicializado
+
+- **O que mudou:** criado o commit inicial `361c2ba` e enviada a branch `main` para `TheLuke451/Site-HRMLEDS`.
+- **Motivo:** guardar o projeto em um repositório remoto para preservar seu histórico e facilitar o acesso.
+- **Arquivos afetados:** os 35 arquivos de código, documentação, configuração e imagens da versão inicial; `AULA.md` e `CHANGELOG.md` registram o processo.
+- **Decisões:** o commit foi associado ao endereço `noreply` da conta para não expor o e-mail pessoal. O cache do PowerShell, dependências instaladas e arquivos de build ficaram fora do commit.
+- **Verificações:** envio do Git terminou com sucesso; branch local `main` acompanha `origin/main`. A compilação Next.js já havia passado antes da publicação.
+- **Pendências:** continuar o desenvolvimento incremental; o repositório é público e os dados de produto continuam demonstrativos.
+
 ## Versão 0.7.0 — Preparação para repositório remoto
 
 ### Documentação e arquivos locais
