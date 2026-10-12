@@ -341,6 +341,10 @@ O GitHub poderá ser utilizado para armazenar o repositório remoto e acompanhar
 
 O Codex deverá explicar os conceitos de repositório, commit, histórico e alterações antes de depender desses mecanismos para tarefas importantes.
 
+Cada alteração efetivamente realizada neste projeto — incluindo funcionalidades, correções, documentação, configuração ou qualquer outra mudança — deverá ser registrada em um commit e enviada ao repositório remoto do GitHub configurado para o projeto. A mensagem do commit deverá descrever de forma clara e concisa o que foi alterado. Antes de criar o commit, conferir os arquivos incluídos e não enviar credenciais, segredos, caches ou arquivos gerados.
+
+O `CHANGELOG.md` deverá continuar registrando as mudanças reais do projeto, suas motivações, arquivos afetados, verificações e pendências. Não criar entradas para informar que commits foram criados ou enviados ao GitHub; o histórico Git já registra essas operações.
+
 Arquivos de configuração com segredos, credenciais e dados privados nunca deverão ser enviados ao repositório.
 
 ### 7.8. Hospedagem
