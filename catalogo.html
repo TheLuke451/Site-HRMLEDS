@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Consulte o catálogo demonstrativo de produtos de iluminação automotiva da HRM Leds."
+    />
+    <title>Produtos | HRM Leds</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-stripe" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html#inicio" aria-label="HRM Leds, página inicial">
+        <img
+          src="referencias/HRM-Leds%20Logo.png"
+          alt="HRM Leds — Comércio de Auto Peças"
+          width="300"
+          height="78"
+        />
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#empresa">Quem somos</a>
+        <a class="active" href="#catalogo">Produtos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="catalog-page" id="catalogo" aria-labelledby="catalog-title">
+        <div class="section-wrap catalog-page-inner">
+          <a class="catalog-back-link" href="index.html#inicio">← Voltar para a página inicial</a>
+          <div class="section-label"><span>01</span><span></span> Catálogo HRM Leds</div>
+          <div class="catalog-page-heading">
+            <div>
+              <p class="eyebrow">Iluminação automotiva</p>
+              <h1 id="catalog-title">Nossos <span>produtos.</span></h1>
+            </div>
+            <p>
+              Confira os produtos demonstrativos abaixo. Informações comerciais
+              completas serão adicionadas quando forem confirmadas pela empresa.
+            </p>
+          </div>
+
+          <p class="catalog-count" id="catalog-status" aria-live="polite">Carregando catálogo...</p>
+          <div class="product-grid" id="product-grid"></div>
+          <noscript><p class="catalog-note">Ative o JavaScript no navegador para visualizar os produtos.</p></noscript>
+          <p class="catalog-note">Imagens extraídas da referência do site antigo. Modelos, códigos, especificações e preços ainda precisam ser confirmados.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="index.html#inicio" aria-label="HRM Leds, voltar ao início">
+        <img src="referencias/HRM-Leds%20Logo.png" alt="HRM Leds" width="220" height="57" loading="lazy" />
+      </a>
+      <p>Comércio de Auto Peças · Iluminação automotiva</p>
+      <a class="back-top" href="#catalogo">Voltar ao início ↑</a>
+      <span class="copyright">© 2026 HRM Leds</span>
+    </footer>
+
+    <script defer src="products.js"></script>
+    <script defer src="catalog.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+# Dependências
+node_modules/
+
+# Saídas e caches de desenvolvimento/build
+.next/
+out/
+dist/
+build/
+coverage/
+.turbo/
+.vercel/
+*.tsbuildinfo
+
+# Arquivos locais e segredos
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+.vscode/
+Microsoft/Windows/PowerShell/ModuleAnalysisCache
