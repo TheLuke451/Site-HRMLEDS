@@ -1,5 +1,16 @@
 # Changelog
 
+## Versão 1.0.0 — Recorte dos veículos no hero
+
+### Banner sem frases incorporadas
+
+- **O que mudou:** criado `public/assets/hero-veiculos.jpg` a partir da faixa que contém a ambulância, o ônibus e a van, removendo a chamada superior e os rótulos inferiores por recorte. O hero usa o recorte à direita no desktop e uma composição responsiva em telas menores.
+- **Motivo:** evitar que a ambulância e o texto embutido no banner concorram com o título HTML do hero, que foi mantido.
+- **Arquivos afetados:** `public/assets/hero-veiculos.jpg`, `app/page.js`, `app/globals.css`, `AULA.md`, `CHANGELOG.md`.
+- **Decisões:** os pixels dos veículos foram preservados por um corte local determinístico, sem recriar a imagem. No celular, `cover` fecha o enquadramento para dar destaque à faixa dentro da tela estreita.
+- **Verificações:** `npm.cmd run build` concluiu com sucesso; imagem do recorte revisada visualmente.
+- **Pendências:** revisar no navegador se o título e os veículos ficam bem separados em computador e celular.
+
 ## Versão 0.9.0 — Ajuste do banner do hero
 
 ### Novo banner na página inicial

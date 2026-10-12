@@ -9,11 +9,12 @@ export default function HomePage() {
       <section className="hero" id="inicio" aria-labelledby="hero-title">
         <Image
           className="hero-image"
-          src="/assets/banner_01.jpg"
-          alt="Banner com uma ambulância, um ônibus e uma van, representando aplicações de iluminação automotiva"
-          fill
+          src="/assets/hero-veiculos.jpg"
+          alt="Recorte com uma ambulância, um ônibus e uma van, representando aplicações de iluminação automotiva"
+          width={1400}
+          height={211}
           preload
-          sizes="100vw"
+          sizes="(max-width: 760px) 100vw, 68vw"
         />
         <div className="hero-shade" aria-hidden="true" />
         <div className="hero-content">
