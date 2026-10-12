@@ -1,5 +1,16 @@
 # Changelog
 
+## Versão 1.0.2 — Centralização do banner do hero
+
+### Enquadramento central
+
+- **O que mudou:** imagem do hero centralizada em computadores e celulares.
+- **Motivo:** distribuir o enquadramento pelos veículos, sem priorizar a van.
+- **Arquivos afetados:** `app/globals.css`, `AULA.md`, `CHANGELOG.md`.
+- **Decisões:** mantido `object-fit: cover` para preencher o hero sem distorção; `object-position: center` define o foco central em todos os tamanhos.
+- **Verificações:** `npm.cmd run build` concluiu com sucesso; `git diff --check` não apontou problemas de whitespace.
+- **Pendências:** conferir visualmente o resultado em computador e celular no navegador.
+
 ## Versão 1.0.1 — Ajuste do banner ao hero
 
 ### Imagem preenchendo a área do hero
