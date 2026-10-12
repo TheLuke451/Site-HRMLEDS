@@ -9,8 +9,8 @@ export default function HomePage() {
       <section className="hero" id="inicio" aria-labelledby="hero-title">
         <Image
           className="hero-image"
-          src="/assets/banner-projetos.png"
-          alt="Placas eletrônicas e componentes de iluminação automotiva"
+          src="/assets/banner_01.jpg"
+          alt="Banner com uma ambulância, um ônibus e uma van, representando aplicações de iluminação automotiva"
           fill
           preload
           sizes="100vw"

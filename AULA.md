@@ -158,6 +158,10 @@ const filteredProducts = products.filter((product) => {
 
 No projeto, `normalizeText` também remove diferenças de acentuação e caixa: assim, uma busca por “luminaria” encontra “Luminária”. Os códigos `DEMO-01` etc. existem apenas para praticar pesquisa por código; são referências fictícias, não códigos comerciais.
 
+### Posicionamento de imagem de fundo no hero
+
+O hero usa `next/image` preenchendo a seção e o CSS `object-fit: cover` para ocupar toda a área sem distorcer a imagem. `transform: scaleX(1.08)` amplia a imagem apenas na horizontal; com `transform-origin: left center`, a borda esquerda fica como referência e os elementos visuais avançam para a direita. Como a seção tem `overflow: hidden`, o excedente é recortado. Esse recurso é útil para ajustar a composição de um banner sem mudar o tamanho do texto ou a altura do hero.
+
 ## Git e preparação para o GitHub
 
 Git é o programa que registra o histórico de versões na pasta do projeto. GitHub é um serviço que pode guardar uma cópia remota desse repositório. O `.gitignore` lista arquivos locais que o Git deve deixar de fora, como `node_modules/` (dependências instaladas) e `.next/` (arquivos gerados ao compilar). O `package-lock.json`, por outro lado, deve ser compartilhado para que outras pessoas instalem as mesmas versões de dependências.

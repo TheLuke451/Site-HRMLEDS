@@ -1,5 +1,16 @@
 # Changelog
 
+## Versão 0.9.0 — Ajuste do banner do hero
+
+### Novo banner na página inicial
+
+- **O que mudou:** o banner da página inicial passou a descrever visualmente uma ambulância, um ônibus e uma van, e sua composição foi deslocada para a direita por meio de uma escala horizontal leve.
+- **Motivo:** adaptar o enquadramento à nova imagem e manter o texto principal do site legível à esquerda.
+- **Arquivos afetados:** `app/page.js`, `app/globals.css`, `public/assets/banner_01.jpg`, `AULA.md`, `CHANGELOG.md`.
+- **Decisões:** o ajuste usa `scaleX` e ancora a imagem à esquerda; a altura do hero e os demais elementos da seção são preservados. O texto alternativo foi atualizado para corresponder à nova arte.
+- **Verificações:** `npm.cmd run build` concluiu com sucesso e gerou as rotas da aplicação.
+- **Pendências:** conferir o enquadramento em computador e celular no navegador.
+
 ## Versão 0.8.0 — Primeiro envio ao GitHub
 
 ### Repositório remoto inicializado
