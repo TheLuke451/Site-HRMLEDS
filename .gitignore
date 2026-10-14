@@ -11,6 +11,9 @@ coverage/
 .vercel/
 *.tsbuildinfo
 
+# Guia do Dono
+guia-do-dono.md 
+
 # Arquivos locais e segredos
 .env
 .env.*
