@@ -1,5 +1,16 @@
 # Changelog
 
+## Versão 1.0.3 — Favicon do site
+
+### Ícone da aba do navegador
+
+- **O que mudou:** adicionado `app/icon.png` para o Next.js disponibilizar como favicon; `.gitignore` passou a ignorar a pasta local `favicon/` e o arquivo `AGENTS2.md`.
+- **Motivo:** exibir a identidade visual da HRMLeds na aba do navegador e evitar incluir arquivos locais auxiliares no repositório.
+- **Arquivos afetados:** `app/icon.png`, `.gitignore`, `CHANGELOG.md`.
+- **Decisões:** o favicon fica em `app/`, onde o Next.js reconhece automaticamente arquivos de ícone.
+- **Verificações:** `npm.cmd run build` concluiu com sucesso e gerou a rota estática `/icon.png`; `git diff --check` não apontou problemas de whitespace.
+- **Pendências:** conferir a aparência do ícone na aba do navegador após iniciar a aplicação.
+
 ## Versão 1.0.2 — Centralização do banner do hero
 
 ### Enquadramento central

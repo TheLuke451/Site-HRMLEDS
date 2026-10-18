@@ -12,7 +12,8 @@ coverage/
 *.tsbuildinfo
 
 # Guia do Dono
-guia-do-dono.md 
+guia-do-dono.md
+AGENTS2.md
 
 # Arquivos locais e segredos
 .env
@@ -30,3 +31,6 @@ pnpm-debug.log*
 Thumbs.db
 .vscode/
 Microsoft/Windows/PowerShell/ModuleAnalysisCache
+
+# Favicon
+favicon/
