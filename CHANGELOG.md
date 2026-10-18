@@ -1,5 +1,16 @@
 # Changelog
 
+## Versão 1.0.4 — Limite de tamanho da busca
+
+### Campo de busca do catálogo
+
+- **O que mudou:** o campo de busca passou a limitar a entrada a 50 caracteres.
+- **Motivo:** manter consultas de interface em tamanho razoável.
+- **Arquivos afetados:** `components/catalog-browser.js`, `CHANGELOG.md`.
+- **Decisões:** o limite é aplicado pelo atributo `maxLength` do campo. Como a busca atual filtra uma lista local no navegador, isso é uma medida de usabilidade e contenção de entrada, não uma correção de vulnerabilidade nem uma proteção para operações de servidor.
+- **Verificações:** `npm.cmd run build` concluiu com sucesso; `git diff --check` não apontou problemas de whitespace.
+- **Pendências:** nenhuma para esta alteração. Caso a busca passe a consultar um servidor, será necessário validar o limite também no servidor.
+
 ## Versão 1.0.3 — Favicon do site
 
 ### Ícone da aba do navegador

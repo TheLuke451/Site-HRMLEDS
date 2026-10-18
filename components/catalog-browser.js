@@ -35,6 +35,7 @@ export default function CatalogBrowser({ products }) {
           <input
             type="search"
             value={search}
+            maxLength={50}
             onChange={(event) => setSearch(event.target.value)}
             placeholder="Ex.: luminária ou sinalizador"
           />
