@@ -1,5 +1,16 @@
 # Changelog
 
+## Versão 1.0.5 — Registro da revisão de segurança
+
+### Relatório inicial de segurança
+
+- **O que mudou:** adicionada a revisão de segurança da interface e do catálogo em `docs/auditorias-seguranca/2026-10-18-auditoria-etapa-1.md`.
+- **Motivo:** documentar o escopo analisado, os resultados observados e as proteções a planejar nas etapas de banco de dados, painel, formulário e publicação.
+- **Arquivos afetados:** `docs/auditorias-seguranca/2026-10-18-auditoria-etapa-1.md`, `CHANGELOG.md`.
+- **Decisões:** o relatório distingue vulnerabilidades atuais de recomendações futuras e registra que não foi feita varredura dedicada do histórico Git por segredos.
+- **Verificações:** revisão somente de leitura do código e configuração; `npm audit --omit=dev` retornou zero vulnerabilidades conhecidas nas dependências de produção; `git diff --cached --check` não apontou problemas de whitespace após remover espaços finais.
+- **Pendências:** revisar novamente após mudanças de arquitetura e antes da publicação.
+
 ## Versão 1.0.4 — Limite de tamanho da busca
 
 ### Campo de busca do catálogo
